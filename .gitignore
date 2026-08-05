@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv-old/
+
+# VS Code
+.vscode/
+
+# YOLO model
+yolo11n.pt
+
+# Old versions
+*_v1.py
+*_v2.py
+
+# Temporary files
+.lgd-*
+*.log
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
