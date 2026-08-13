@@ -1,5 +1,5 @@
 # Autonomous Obstacle-Avoiding Sphero RVR+ Robot
-Raspberry Pi-based project built for a summer program utilizing several sensors and Python code for the robot to autonomously avoid obstacles and drive in different directions. This is part of a wider autonomous robotics project with the Sphero RVR+ which soon may incorporate more sensors and more advanced movement and logic.
+Raspberry Pi-based project built independently during a summer program utilizing several sensors and Python code for the robot to autonomously avoid obstacles and drive in different directions. This is part of a wider autonomous robotics project with the Sphero RVR+ which soon may incorporate more sensors and more advanced movement and logic.
 
 The robot can be used to explore rooms, avoid obstructions, and navigate through simple mazes.
 
@@ -8,7 +8,11 @@ The robot can be used to explore rooms, avoid obstructions, and navigate through
 
 • Automatically detects obstacles in front of the robot
 
-• Detects and avoids objects by changing direction into a clear path
+• Displays real-time distance readings in centimeters
+
+• Provides visual and audible feedback through the RVR’s built-in LEDs and an independent buzzer
+
+• Avoids objects by changing direction toward a clear path
 
 > [!NOTE]
 > The currently implemented camera and person-following system is experimental. Testing and development were limited by the available hardware and software setup.
@@ -27,6 +31,8 @@ The robot can be used to explore rooms, avoid obstructions, and navigate through
 • Raspberry Pi 5 8GB
 
 • HC-SR04 ultrasonic sensor
+
+• Passive buzzer
 
 • USB Camera
 
