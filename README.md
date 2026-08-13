@@ -1,5 +1,5 @@
 # Autonomous Obstacle-Avoiding Sphero RVR+ Robot
-Raspberry Pi based project built for a summer program using sensors and code for the robot to avoid obstacles and drive in a different direction. This is part of a wider autonomous robotics project with the Sphero RVR+ which soon may have more sensors and more complicated movements.
+Raspberry Pi-based project built for a summer program utilizing several sensors and Python code for the robot to autonomously avoid obstacles and drive in different directions. This is part of a wider autonomous robotics project with the Sphero RVR+ which soon may incorporate more sensors and more advanced movement and logic.
 
 The robot can be used to explore rooms, avoid obstructions, and navigate through simple mazes.
 
@@ -8,7 +8,7 @@ The robot can be used to explore rooms, avoid obstructions, and navigate through
 
 • Automatically detects obstacles in front of the robot
 
-• Detects and navigates around objects by moving in a separate direction
+• Detects and avoids objects by changing direction into a clear path
 
 > [!NOTE]
 > The currently implemented camera and person-following system is experimental. Testing and development were limited by the available hardware and software setup.
@@ -21,15 +21,21 @@ The robot can be used to explore rooms, avoid obstructions, and navigate through
 
 • `object_detection_web.py`: Flask and YOLO-based server that processes the USB camera feed, performs object/person detection, and provides detection data to the person-following controller.
 
-## Hardware
+## Hardware Used
+• Sphero RVR+ Robot
+
 • Raspberry Pi 5 8GB
+
+• HC-SR04 ultrasonic sensor
+
+• USB Camera
 
 ## Possible Improvements
 • Integrate multiple ultrasonic sensors or a sensor mounted on a servo in order to "see" in multiple directions and decide the best path
 
-• Improve the setup by mounting the Raspberry Pi board and sensors, use a dedicated Raspberry Pi Camera, portable 5V/5A power bank
+• Improve the physical setup by mounting the Raspberry Pi board and sensors, using a dedicated Raspberry Pi Camera, and powering via portable 5V/5A power bank
 
 • Better obstacle-avoiding logic (with better hardware and software, possible ability to map and find better paths)
 
-• Significant improvement on the coding and functionality of the camera/web/person-following project
+• Significant improvement on the coding, utility, and functionality of the camera/web/person-following project
 
